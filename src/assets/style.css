@@ -1,0 +1,47 @@
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+li{
+    display: inline;
+    font-size: 1.2rem;
+}
+li:not(:last-child){
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: rgb(170, 170, 170);
+    transition: 0.3s ease-in-out;
+}
+nav a:hover{
+    color: rgb(148, 148, 148);
+}
+
+nav a.active{
+color: #fff;
+}
+.about-card{
+    position: relative;
+    padding: 50px;
+}
+.about-card i{
+    position: absolute;
+    top:0;
+    left: 50%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    border-radius: 5px;
+}
+
+.about_content{
+    display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 75px;
+        grid-row-gap: 75px;
+        padding: 0;
+        border-radius: 5px;
+}
